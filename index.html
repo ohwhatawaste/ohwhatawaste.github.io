@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Same Title -->
+    <title>Oh What a Waste | Litter, your health, and a pixel quest</title>
+    
+    <!-- Same Favicon (Points directly to your repository's root domain favicon) -->
+    <link rel="icon" type="image/x-icon" href="https://omniscientpolymath.github.io/ohwhatawaste-backend-src/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://omniscientpolymath.github.io/ohwhatawaste-backend-src/">
+    
+    <style>
+        /* Forces a seamless, zero-margin edge-to-edge frame wrapper */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #0c0f12; /* Deep slate background matching the game theme */
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Fully responsive iframe execution targeting your backend source */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 
+          Loads your exact standalone game files from your backend source URL
+          without leaking the long scrollable marketing landing page layout.
+        -->
+        <iframe 
+            src="https://omniscientpolymath.github.io/ohwhatawaste-backend-src/" 
+            allow="autoplay; fullscreen; keyboard-map;"
+            title="Oh What a Waste Game Module">
+        </iframe>
+    </div>
+
+</body>
+</html>
